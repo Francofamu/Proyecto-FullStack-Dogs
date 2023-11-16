@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.image {
+    background-image: url('https://www.hillspet.com.mx/content/dam/cp-sites/hills/hills-pet/es_mx/skyword/golden-retriever-puppy-running-in-field-SW.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.boton {
+    position: absolute;
+    left: 160px;
+    bottom: 260px;
+    font-size: 50px;
+    padding: 20px 40px;
+    background-color: rgba(221, 226, 231, 0.5);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.boton:hover {
+    background-color: rgba(221, 226, 231, 0.642);
+}
+
+/* Estilos para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+@media (max-width: 768px) {
+    .image {
+        background-size: auto; /* Ajusta el tamaño de la imagen según el contenido */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        padding: 20px; /* Agrega espacio alrededor del contenido */
+        text-align: center; /* Centra el contenido */
+    }
+
+    .boton {
+        position: static; /* Restaura la posición estática en el flujo del documento */
+        margin-top: 20px; /* Agrega margen superior para separar el botón del contenido */
+    }
+}
